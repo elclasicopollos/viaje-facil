@@ -69,31 +69,4 @@
   </div>
 
   <script>
-    function calcular() {
-      const consumo = parseFloat(document.getElementById("consumo").value);
-      const precio = parseFloat(document.getElementById("precio").value);
-      const km = parseFloat(document.getElementById("km").value);
-      const pago = parseFloat(document.getElementById("pago").value);
-
-      if (isNaN(consumo) || isNaN(precio) || isNaN(km) || isNaN(pago)) {
-        alert("Por favor, completa todos los campos correctamente.");
-        return;
-      }
-
-      const costo = (consumo / 100) * km * precio;
-      const ganancia = pago - costo;
-
-      const res = document.getElementById("resultado");
-
-      if (ganancia > 0) {
-        res.innerHTML = "✅ Conviene — Ganancia: $" + ganancia.toFixed(2);
-        res.style.color = "green";
-      } else {
-        res.innerHTML = "❌ No conviene — Pérdida: $" + ganancia.toFixed(2);
-        res.style.color = "red";
-      }
-    }
-  </script>
-
-</body>
-</html>
+    functio
